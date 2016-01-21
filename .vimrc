@@ -40,6 +40,15 @@ noremap   <Right>  <NOP>
 "Enable Mouse Scrolling
 set mouse=a
 
+"Split Windows & Buffers
+map <C-H> <C-W>h
+map <C-J> <C-W>j
+map <C-K> <C-W>k
+map <C-L> <C-W>l
+map + <C-W>+
+map - <C-W>-
+nnoremap <F5> :buffers<CR>:buffer<Space>
+
 "Exuberant Ctags
 set tags=./tags;/
 
