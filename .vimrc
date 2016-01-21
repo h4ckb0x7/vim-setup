@@ -63,7 +63,3 @@ let Tlist_Exit_OnlyWindow = 1
 let Tlist_Show_One_File = 1
 let Tlist_Use_Right_Window = 1
 nmap ; :TlistToggle<CR>
-
-"Settings for NERDTree
-"autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
-"nmap <C-n> :NERDTreeToggle<CR>
