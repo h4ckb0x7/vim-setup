@@ -47,12 +47,14 @@ map <C-K> <C-W>k
 map <C-L> <C-W>l
 map + <C-W>+
 map - <C-W>-
+let mapleader=" "
+map <leader>l :vsp<CR><C-W>l
 nnoremap <F5> :buffers<CR>:buffer<Space>
 
 "Exuberant Ctags
 set tags=./tags;/
 
-"Explorer Settings
+"File Explorer Settings
 let g:netrw_liststyle=1
 let mapleader=" "
 map <leader>k :Explore<CR>
