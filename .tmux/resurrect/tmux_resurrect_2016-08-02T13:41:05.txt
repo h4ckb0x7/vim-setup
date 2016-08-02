@@ -1,0 +1,11 @@
+pane	0	0	:bash	1	:*	0	:/home/swest	0	minicom	:minicom
+pane	0	0	:bash	1	:*	1	:/home/swest	0	telnet	:telnet 10.72.20.165
+pane	0	0	:bash	1	:*	2	:/home/swest	0	telnet	:telnet 10.72.20.165
+pane	0	0	:bash	1	:*	3	:/home/swest	0	telnet	:telnet 10.72.20.165
+pane	0	0	:bash	1	:*	4	:/home/swest/Projects/V2X/Development/Software/iMX6/Source/C/fac/sdhcan	0	vim	:vim sdhcan.c
+pane	0	0	:bash	1	:*	5	:/home/swest	0	bash	:
+pane	0	0	:bash	1	:*	6	:/home/swest	0	htop	:htop
+pane	0	0	:bash	1	:*	7	:/home/swest	1	bash	:less
+pane	0	0	:bash	1	:*	8	:/home/swest/Projects/V2X/Development/Software/iMX6/Source	0	bash	:
+window	0	0	1	:*	70e0,284x77,0,0{81x77,0,0[81x24,0,0,2,81x18,0,25,8,81x17,0,44,6,81x15,0,62,7],202x77,82,0[202x61,82,0{140x61,82,0,3,61x61,223,0[61x8,223,0,11,61x27,223,9,12,61x24,223,37,14]},202x15,82,62,10]}
+state	0	
