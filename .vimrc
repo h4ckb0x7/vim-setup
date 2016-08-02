@@ -3,6 +3,7 @@ execute pathogen#infect()
 
 "Color Scheme Settings
 syntax on
+set term=screen-256color
 set background=dark
 colorscheme wombat256
 
