@@ -1,0 +1,5 @@
+pane	0	0	:bash	1	:*	0	:/home/swest	1	bash	:
+pane	0	0	:bash	1	:*	1	:/home/swest	0	bash	:
+pane	0	0	:bash	1	:*	2	:/home/swest	0	bash	:
+window	0	0	1	:*	70c6,132x42,0,0[132x21,0,0,0,132x20,0,22{66x20,0,22,1,65x20,67,22,2}]
+state	0	
