@@ -11,8 +11,14 @@
 (require 'evil)
 (evil-mode t)
 
+;; Git Integration
+(global-set-key (kbd "C-x g") 'magit-status)
+
 ;; Mouse Support
 (xterm-mouse-mode t)
+
+;; C Programming Style
+(setq c-default-style "linux")
 
 ;; Tabs
 (setq-default indent-tabs-mode nil)
