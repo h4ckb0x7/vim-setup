@@ -26,6 +26,7 @@ set relativenumber			"Other Lines Show Relative Line Number
 highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE
 
 "Miscellaneous Settings
+set nowrap                  "Turn Off Line Wrapping
 set noerrorbells            "Turn Off Error Bells
 
 "Disable Arrow Keys
