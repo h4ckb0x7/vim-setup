@@ -122,3 +122,7 @@ function! LightlineFilename()
 endfunction
 set laststatus=2
 set noshowmode
+
+"Code Folding
+nnoremap <silent> <F5> zfa}<CR>
+nnoremap <silent> <F6> zo<CR>
