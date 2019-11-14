@@ -53,9 +53,6 @@ let mapleader=" "
 map <leader>l :vsp<CR><C-W>l
 nnoremap <F5> :buffers<CR>:buffer<Space>
 
-"Exuberant Ctags
-set tags=./tags;/
-
 "File Explorer Settings
 let g:netrw_liststyle=1
 let mapleader=" "
@@ -68,61 +65,9 @@ let Tlist_Show_One_File = 1
 let Tlist_Use_Right_Window = 1
 nmap ; :TlistToggle<CR>
 
-"Settings for Lightline
+"Lightline Settings
 let g:lightline = {
       \ 'colorscheme': 'wombat',
-      \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'fugitive', 'filename' ] ]
-      \ },
-      \ 'component_function': {
-      \   'fugitive': 'LightlineFugitive',
-      \   'readonly': 'LightlineReadonly',
-      \   'modified': 'LightlineModified',
-      \   'filename': 'LightlineFilename'
-      \ },
-      \ 'separator': { 'left': '', 'right': '' },
-      \ 'subseparator': { 'left': '', 'right': '' }
       \ }
-
-function! LightlineModified()
-    if &filetype == "help"
-        return ""
-    elseif &modified
-        return "+"
-    elseif &modifiable
-        return ""
-    else
-        return ""
-    endif
-endfunction
-
-function! LightlineReadonly()
-    if &filetype == "help"
-        return ""
-    elseif &readonly
-        return ""
-    else
-        return ""
-    endif
-endfunction
-
-function! LightlineFugitive()
-    if exists("*fugitive#head")
-        let branch = fugitive#head()
-        return branch !=# '' ? ' '.branch : ''
-    endif
-    return ''
-endfunction
-
-function! LightlineFilename()
-    return ('' != LightlineReadonly() ? LightlineReadonly() . ' ' : '') .
-                \ ('' != expand('%:t') ? expand('%:t') : '[No Name]') .
-                \ ('' != LightlineModified() ? ' ' . LightlineModified() : '')
-endfunction
 set laststatus=2
 set noshowmode
-
-"Code Folding
-nnoremap <silent> <F5> zfa}<CR>
-nnoremap <silent> <F6> zo<CR>
