@@ -13,6 +13,9 @@ set nobackup				"No Backup File (Original File Before Edits)
 set nowritebackup			"Saves to Original File
 set noswapfile				"Swap Files are a Distraction
 
+"File Encoding Settings
+set fileencodings=ucs-bom,utf-8,default,sjis,latin1
+
 "Tab/Indentation Settings
 set tabstop=4				"Tab Width
 set shiftwidth=4			"Indentation Width
