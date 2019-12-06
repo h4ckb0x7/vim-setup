@@ -45,6 +45,9 @@ noremap   <Right>  <NOP>
 "Enable Mouse Scrolling
 set mouse=a
 
+"Enable Copy to Clipboard
+vnoremap <C-y> "+y
+
 "Split Windows & Buffers
 map <C-H> <C-W>h
 map <C-J> <C-W>j
